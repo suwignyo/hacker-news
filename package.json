@@ -1,0 +1,22 @@
+{
+  "name": "hacker-news-duplicate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "browserify": "^16.2.2",
+    "express": "^4.16.3",
+    "grabity": "^1.0.4",
+    "nodemon": "^1.18.4",
+    "requirejs": "^2.3.6",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
