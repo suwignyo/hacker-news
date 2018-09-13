@@ -21,7 +21,7 @@ body {
   background-color: white;
 }
 
-.container {
+#container {
   width: 70%;
   position: relative;
   height: min-content;
@@ -52,6 +52,7 @@ body {
 
 .titlelink:hover{
   text-decoration: underline;
+  color: black;
 }
 
 

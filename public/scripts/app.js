@@ -92,9 +92,8 @@ function renderNews(xhttp) {
     description +
     "</div>" +
     "</div>";
-  let container = '<div class="container">' + domString + "</div>";
-  el.innerHTML = container;
-  document.body.appendChild(el.firstChild);
+  el.innerHTML = domString;
+  document.getElementById("container").appendChild(el.firstChild);
 }
 
 // Button to get more posts
