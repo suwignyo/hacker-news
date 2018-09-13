@@ -1,5 +1,5 @@
 // let grabity = require("grabity");
-const openGraphAPI = "?app_id=5b96c7d62058cb0b00b764a0";
+const openGraphAPI = "?app_id=5b96803c2058cb0b00b7627f";
 const openGraphURL = "https://opengraph.io/api/1.0/site/";
 // const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const baseURL = "https://hacker-news.firebaseio.com/v0";
@@ -92,8 +92,9 @@ function renderNews(xhttp) {
     description +
     "</div>" +
     "</div>";
-  el.innerHTML = domString;
-  document.getElementById("container").appendChild(el.firstChild);
+  let container = '<div class="container">' + domString + "</div>";
+  el.innerHTML = container;
+  document.getElementById("news").appendChild(el.firstChild);
 }
 
 // Button to get more posts
